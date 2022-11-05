@@ -11,7 +11,7 @@ class LambdaDemo extends Component {
   integrationHandler = () => {
     (async () => {
       console.log('integrationHandler');
-      runtests();
+      await runtests();
     })();
   };
   handleClick = (api) => (e) => {
