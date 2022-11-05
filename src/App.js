@@ -9,7 +9,10 @@ class LambdaDemo extends Component {
     this.state = { loading: false, msg: null };
   }
   integrationHandler = () => {
-    runtests();
+    (async () => {
+      console.log('integrationHandler');
+      runtests();
+    })();
   };
   handleClick = (api) => (e) => {
     e.preventDefault();
